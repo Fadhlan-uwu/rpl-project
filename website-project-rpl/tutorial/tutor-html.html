@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Module Informatics | Tutorial HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        ul.nav-pills {
+            top: 20px;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <nav class="navbar navbar-expand-lg navbar-light dl-nav-bg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../modul.html">Modul</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorial
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="tutor-html.html">HTML</a>
+                        <a class="dropdown-item" href="tutor-css.html">CSS</a>
+                        <a class="dropdown-item" href="tutor-java.html">Java</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../forum-diskusi.html">Forum Diskusi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../kuis.html">Kuis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">Tentang Kami</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-2 col-3 dl-nav-scrool" id="myScrollspy" style="background-color: #e3ded5;">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#pendahuluan" style="margin-top: 75px;">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#html-editor">HTML Editor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#html-basic">HTML Basic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Upcoming...</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="col-sm-9 col-8 dl-modul">
+                <h1 style="margin-top: 70px;">Tutorial Dasar HTML</h1>
+                <hr style="width: 30%;">
+
+                <!-- Pendahuluan -->
+                <h2 id="pendahuluan">Pendahuluan</h2>
+
+                <h3>Apa itu HTML ?</h3>
+                <p>HTML adalah bahasa markup standar untuk membuat halaman Web.
+                    HTML adalah singkatan dari Hyper Text Markup Language. <br>
+                    HTML menggambarkan struktur halaman Web. <br>
+                    HTML terdiri dari serangkaian elemen. <br>
+                    Elemen HTML memberi tahu browser cara menampilkan konten. <br>
+                    Elemen HTML diwakili oleh tag. <br>
+                    HTML memberi label label pada konten seperti "heading", "paragraf", "table", dan sebagainya.
+                    <br>
+                    Browser tidak menampilkan tag HTML, tetapi menggunakannya untuk membuat konten halaman.
+                </p>
+                <h3>Contoh Penulisan Program HTML</h3>
+                <img src="../img/ss/Screenshot_1.png" alt="" class="img-fluid">
+                <h4>Penjelasan Kode Diatas</h4>
+                <p>
+                    &#60! Deklarasi DOCTYPE html&#62 mendefinisikan dokumen ini sebagai HTML5 <br>
+                    Elemen &#60html&#62 adalah elemen root dari halaman HTML <br>
+                    Elemen &#60head&#62 berisi informasi meta tentang dokumen <br>
+                    Elemen &#60title&#62 menentukan judul untuk dokumen <br>
+                    Elemen &#60body&#62 berisi konten halaman yang terlihat <br>
+                    Elemen &#60h1&#62 mendefinisikan heading besar <br>
+                    Elemen &#60p&#62 mendefinisikan paragraf
+                </p>
+                <h3>HTML Tags</h3>
+                <p>Tag HTML adalah nama elemen yang dikelilingi oleh kurung sudut:</p>
+                <img src="../img/ss/Screenshot_2.png" class="img-fluid" alt="">
+                <h4>Penjelasan:</h4>
+                <p>
+                    Tag HTML biasanya berpasangan seperti &#60p&#62 dan &#60/p&#62 <br>
+                    Tag pertama dalam pasangan adalah tag awal, tag kedua adalah tag akhir <br>
+                    Tag akhir ditulis seperti tag awal, tetapi dengan garis miring dimasukkan sebelum nama tag <br>
+                </p>
+                <h3>Struktur Halaman HTML</h3>
+                <img src="../img/ss/Screenshot_3.png" class="img-fluid" alt="html struktur">
+                <h3>HTML Deklarasi</h3>
+                <p>
+                    Deklarasi! DOCTYPE mewakili tipe dokumen, dan membantu browser untuk menampilkan halaman web dengan
+                    benar. <b></b>
+                    Itu harus hanya muncul sekali, di bagian atas halaman (sebelum tag HTML apa pun). <br>
+                    Deklarasi! DOCTYPE tidak peka huruf besar-kecil. <br>
+                    Deklarasi! DOCTYPE untuk HTML5 adalah: <br>
+                </p>
+                <img src="../img/ss/Screenshot_4.png" style="width: 20%;" alt="">
+
+                <!-- html editor -->
+                <h2 id="html-editor">HTML Editor</h2>
+
+                <p>Didalam menuliskan kode html, ada banyak sekali kode editor yang bisa digunakan. Untuk bawaan
+                    windows, gunakanlan notepad. Untuk software rekomendasi dari kami, gunakanlah teks editor VS Code
+                    atau Sublime Text.</p>
+
+                <!-- html basic -->
+                <h2 id="html-basic">HTML Basic</h2>
+
+                <h3>HTML Dokumen</h3>
+                <p>Deklarasi! DOCTYPE mewakili jenis dokumen, dan membantu peramban untuk menampilkan halaman web dengan
+                    benar.
+                    Itu harus hanya muncul sekali, di bagian atas halaman (sebelum tag HTML apa pun).
+                    Deklarasi! DOCTYPE tidak peka huruf besar-kecil.
+                    Deklarasi! DOCTYPE untuk HTML5 adalah:</p>
+                <img src="../img/ss/Screenshot_5.png" class="img-fluid" alt="">
+                <h3>HTML Heading</h3>
+                <p>Judul HTML didefinisikan dengan tag h1 ke h6. <br>
+                    h1 mendefinisikan heading yang paling penting. h6 mendefinisikan heading paling tidak penting:
+                </p>
+                <img src="../img/ss/Screenshot_6.png" class="img-fluid" alt="">
+                <h3>HTML Links</h3>
+                <p>Tautan HTML didefinisikan dengan a tag:</p>
+                <img src="../img/ss/Screenshot_7.png" class="img-fluid" alt="">
+                <p>
+                    Tujuan tautan ditentukan dalam href atribut. <br>
+                    Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML. <br>
+                    Anda akan belajar lebih banyak tentang atribut di bab selanjutnya. <br>
+                </p>
+                <h3>HTML Image</h3>
+                Gambar HTML didefinisikan dengan img tag. <b></b>
+                File sumber ( src), teks alternatif ( alt) width,, dan heightdisediakan sebagai atribut:
+                <img src="../img/ss/Screenshot_8.png" class="img-fluid" alt="">
+
+                <h3>HTML Button</h3>
+                <p>Didefinisika dengan tag button <br> </p>
+                <img src="../img/ss/Screenshot_9.png" class="img-fluid" alt="">
+
+                <h3>HTML List</h3>
+                <p>Daftar HTML didefinisikan dengan tag (daftar ul tidak berurutan / peluru) atau ol (daftar dipesan /
+                    bernomor), diikuti oleh li tag (daftar item):</p>
+                <img src="../img/ss/Screenshot_10.png" class="img-fluid" alt="">
+
+                <!-- Upcoming -->
+                <h2 id="">Upcoming</h2>
+
+                <!-- Daftar Pustaka -->
+                <h2 id="">Daftar Pustaka</h2>
+                <br>
+                <p>w3schools, “HTML Introduction,” www.w3schools.com, 2020. [Online]. Available:
+                    https://www.w3schools.com/html/html_intro.asp.
+                </p>
+                <p>
+                    w3schools, “HTML Basic Example,” www.w3schools.com, 2020. [Online]. Available:
+                    https://www.w3schools.com/html/html_basic.asp.
+                </p>
+
+
+                <!-- penutup div dl-modul -->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>&#169; 2020, Fadhlan Sulistiyo & Ilham Hidayatullah, RPL Project</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

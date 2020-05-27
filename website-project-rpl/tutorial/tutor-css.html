@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Module Informatics | Tutorial CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        ul.nav-pills {
+            top: 20px;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <nav class="navbar navbar-expand-lg navbar-light dl-nav-bg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../modul.html">Modul</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorial
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="tutor-html.html">HTML</a>
+                        <a class="dropdown-item" href="tutor-css.html">CSS</a>
+                        <a class="dropdown-item" href="tutor-java.html">Java</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../forum-diskusi.html">Forum Diskusi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../kuis.html">Kuis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">Tentang Kami</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-2 col-3 dl-nav-scrool" id="myScrollspy" style="background-color: #e3ded5;">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#pendahuluan" style="margin-top: 75px;">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#css-syntax">CSS Syntax</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#css-selector">CSS Selectors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Upcoming...</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="col-sm-9 col-8 dl-modul">
+                <h1 style="margin-top: 70px;">Tutorial Dasar CSS</h1>
+                <hr style="width: 30%;">
+
+                <!-- Pendahuluan -->
+                <h2 id="pendahuluan">Perkenalan CSS</h2>
+
+                <h3>Apa itu CSS ?</h3>
+                <ul>
+                    <li>CSS adalah singkatan dari Cascading Style Sheets</li>
+                    <li>CSS menjelaskan bagaimana elemen-elemen HTML ditampilkan di layar, kertas, atau di media
+                        lain</li>
+                    <li>CSS menghemat banyak pekerjaan. Itu dapat mengontrol tata letak beberapa halaman web
+                        sekaligus</li>
+                    <li>Lembar gaya eksternal disimpan dalam file CSS</li>
+                </ul>
+
+                <h3>Kenapa Harus Menggunakan CSS ?</h3>
+                <p>
+                    CSS digunakan untuk menentukan gaya untuk halaman web Anda, termasuk desain, tata letak dan variasi
+                    tampilan untuk berbagai perangkat dan ukuran layar.
+                </p>
+
+                <h3>CSS Memecahkan Masalah Besar</h3>
+                <p>
+                    HTML TIDAK PERNAH dimaksudkan untuk berisi tag untuk memformat halaman web!
+                </p>
+                <p>
+                    HTML dibuat untuk menjelaskan konten halaman web, seperti:
+                </p>
+                <p>
+                    &#60h1> This is a Heading &#60h1> <br>
+                    &#60p> this is paragraf &#60p> <br>
+                </p>
+                <p>
+                    Ketika tag seperti &#60i>, dan atribut warna ditambahkan ke spesifikasi HTML 3.2, itu memulai mimpi
+                    buruk bagi pengembang web. Pengembangan situs web besar, di mana font dan informasi warna
+                    ditambahkan ke setiap halaman, menjadi proses yang panjang dan mahal.
+                </p>
+                <p>
+                    Untuk mengatasi masalah ini, Konsorsium World Wide Web (W3C) menciptakan CSS.
+                </p>
+                <p>CSS menghapus pemformatan gaya dari halaman HTML!</p>
+
+                <h3>CSS Menghemat Banyak Pekerjaan!</h3>
+                <p>
+                    Definisi gaya biasanya disimpan dalam file .css eksternal.
+                </p>
+                <p>
+                    Dengan file stylesheet eksternal, Anda dapat mengubah tampilan seluruh situs web dengan mengubah
+                    hanya satu file!
+                </p>
+
+                <h2 id="css-syntax">CSS Syntax</h2>
+
+                <h3>CSS Syntax</h3>
+                <p>Rangkaian aturan CSS terdiri dari pemilih dan blok deklarasi:</p>
+                <p>Selektor menunjuk ke elemen HTML yang ingin Anda gaya.</p>
+                <p>Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh tanda titik koma.</p>
+                <p>
+                    Setiap deklarasi menyertakan nama properti CSS dan nilai, dipisahkan oleh titik dua.
+                </p>
+                <p>
+                    Beberapa deklarasi CSS dipisahkan dengan titik koma, dan blok deklarasi dikelilingi oleh kurung
+                    kurawal.
+                </p>
+                <h4>Contoh:</h4>
+                <img src="../img/ss/Screenshot_16.png" class="img-fluid" alt="CSS">
+                <h4>Penjelasan:</h4>
+                <ul>
+                    <li>p adalah pemilih dalam CSS (itu menunjuk ke elemen HTML yang ingin Anda gaya: &#60p>).</li>
+                    <li>warna adalah properti, dan merah adalah nilai properti</li>
+                    <li>text-align adalah properti, dan pusat adalah nilai properti</li>
+                </ul>
+
+                <h2 id="css-selector">CSS Selectors</h2>
+
+                <h3>CSS Selectors</h3>
+                <p>
+                    Selektor CSS digunakan untuk "menemukan" (atau memilih) elemen HTML yang ingin Anda gaya.
+                </p>
+                <p>
+                    Kami dapat membagi pemilih CSS menjadi lima kategori:
+                </p>
+                <ul>
+                    <li>Selektor sederhana (pilih elemen berdasarkan nama, id, kelas)</li>
+                    <li>Penyeleksi Combinator (elemen pilih berdasarkan hubungan tertentu di antara mereka)</li>
+                    <li>Selektor pseudo-kelas (pilih elemen berdasarkan kondisi tertentu)</li>
+                    <li>Selektor elemen semu (pilih dan gaya bagian dari elemen)</li>
+                    <li>Selektor elemen semu (pilih dan gaya bagian dari elemen)</li>
+                </ul>
+
+                <h3>CSS Element Selector</h3>
+                <p>
+                    Pemilih elemen memilih elemen HTML berdasarkan nama elemen.
+                </p>
+                <img src="../img/ss/Screenshot_16.png" class="img-fluid" alt="CSS">
+                <h3>The CSS id Selector</h3>
+                <p>
+                    Pemilih id menggunakan atribut id dari elemen HTML untuk memilih elemen tertentu.
+                </p>
+                <p>
+                    Id suatu elemen adalah unik di dalam sebuah halaman, jadi pemilih id digunakan untuk memilih satu
+                    elemen unik!
+                </p>
+                <p>
+                    Untuk memilih elemen dengan id tertentu, tulis karakter hash (#), diikuti oleh id elemen.
+                </p>
+                <h4>Contoh:</h4>
+                <img src="../img/ss/Screenshot_17.png" class="img-fluid" alt="CSS">
+
+                <h3>The CSS class Selector</h3>
+                <p>Pemilih kelas memilih elemen HTML dengan atribut kelas tertentu. <br>
+                    Untuk memilih elemen dengan kelas tertentu, tulis karakter titik (.), Diikuti dengan nama kelas.
+                </p>
+                <img src="../img/ss/Screenshot_18.png" class="img-fluid" alt="CSS">
+
+                <h3>The CSS Universal Selector</h3>
+                <p>
+                    Selektor universal (*) memilih semua elemen HTML pada halaman.
+                </p>
+                <h4>Contoh:</h4>
+                <img src="../img/ss/Screenshot_19.png" class="img-fluid" alt="CSS">
+
+                <h3>The CSS Grouping Selector</h3>
+                <p>
+                    Seleksi pengelompokan memilih semua elemen HTML dengan definisi gaya yang sama. <br>
+                    Lihatlah kode CSS berikut (elemen h1, h2, dan p memiliki definisi gaya yang sama):
+                </p>
+                <img src="../img/ss/Screenshot_20.png" class="img-fluid" alt="CSS">
+
+                <h2>Daftar Pustaka</h2>
+                <p>
+                    w3schools, “CSS Introduction,” www.w3schools.com, 2020. [Online]. Available:
+                    https://www.w3schools.com/css/css_intro.asp.
+                </p>
+                <p>
+                    w3schools, “CSS Syntax,” www.w3schools.com, 2020. [Online]. Available:
+                    https://www.w3schools.com/css/css_syntax.asp.
+                </p>
+                <p>
+                    w3schools, “CSS Selectors,” www.w3schools.com, 2020. [Online]. Available:
+                    https://www.w3schools.com/css/css_selectors.asp.
+                </p>
+
+                <!-- Upcoming -->
+                <h2 id="">Upcoming</h2>
+
+
+                <!-- penutup div dl-modul -->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>&#169; 2020, Fadhlan Sulistiyo & Ilham Hidayatullah, RPL Project</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

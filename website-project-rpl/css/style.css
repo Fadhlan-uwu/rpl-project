@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.dl-jumbo {
+    text-align: center;
+}
+
+.dl-jumbo-bg {
+    background-image: url(../img/clarisse-meyer-jKU2NneZAbI-unsplash.jpg);
+    background-attachment: fixed;
+    opacity: 0.7;
+    color: #fff7e6;
+    border-radius: 0%;
+    margin: 0;
+}
+
+.dl-nav-bg {
+    background-color: white;
+    border-bottom: 1px solid #ededed;
+}
+
+.dl-nav-color {
+    color: #a87e20;
+}
+
+.dl-pd-jumbo {
+    height: 800px;
+}
+
+.dl-btn {
+    padding: 14px 16px;
+    border: 1px solid #fff7e6;
+    text-decoration: none;
+    color: white;
+}
+
+#dl-jumb a:hover {
+    background-color: #fff7e6;
+    color: burlywood;
+    text-decoration: none;
+}
+
+.dl-container-bg {
+    background-color: #e3e3e3;
+}
+
+.dl-apaitu {
+    padding: 50px 10px;
+}
+
+.dl-container-bg2 {
+    background-color: #cf9323;
+}
+
+.dl-carimodul {
+    padding: 100px 10px;
+}
+
+.dl-bg-card {
+    background-color: #fff8eb;
+}
+
+.dl-bg-card a {
+    text-decoration: none;
+    color: #472e00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dl-bg-card a:hover {
+    color: #916e2d;
+    font-weight: normal;
+}
+
+.card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card-body:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 213, 0, 0.2), 0 6px 20px 0 rgba(255, 213, 0, 0.19);
+}
+
+footer {
+    text-align: center;
+    background-color: #dbd8d0;
+    color: white;
+    padding: 10px;
+}
+
+.dl-modul {
+    padding: 30px;
+}
+
+.dl-modul h1 {
+    text-align: center;
+}
+
+.dl-modul a {
+    text-decoration: none;
+    color: #0041ab;
+}
+
+.dl-modul a:hover {
+    text-decoration: underline;
+}
+
+.dl-modul h2 {
+    background-color: #ff9d00;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dl-modul h3,
+h4 {
+    margin-top: 40px;
+    color: #634600;
+}
+
+.dl-nav-scrool a {
+    color: #4f3300;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dl-navside {
+    position: fixed;
+}

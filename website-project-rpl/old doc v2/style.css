@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* header */
+.dl-jumbotron {
+    padding: 80px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+
+.dl-jumbotron p {
+    margin-top: 50px;
+}
+
+.dl-jumbotron a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.dl-jumbotron a:hover {
+    background-color: blue;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+}
+
+nav a {
+    text-decoration: none;
+    color: aqua;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: rebeccapurple;
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .art1-kiri,
+    .art1-kanan {
+        width: 100%;
+        padding: 0;
+    }
+
+
+}
+
+.header-parallax {
+    padding: 60px;
+    height: 550px;
+
+    /* Photo by Alfons Morales on Unsplash */
+    background-image: url("../img/library4.jpg");
+
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff2de;
+    text-shadow: 2px 2px 3px #80561c;
+    letter-spacing: 3px;
+}
+
+.header-parallax p {
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.header-parallax h1 {
+    font-size: 40px;
+}
+
+header {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #dec9b1;
+}
+
+nav {
+    background-color: #cfa06d;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header-parallax a {
+    background-color: rgba(163, 105, 42, 0.6);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.header-parallax a:hover {
+    background-color: #ffc670;
+}
+
+#drj {
+    font-size: 15px;
+}
+
+footer {
+    background-color: #cfa06d;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#content {
+    float: left;
+    width: 75%;
+    padding: 30px 70px;
+    height: 100%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    border-left: 1px solid #e8e8e8;
+    height: 2300px;
+}
+
+aside p {
+    font-size: 13px;
+}
+
+aside h4 {
+    text-align: center;
+}
+
+main {
+    overflow: auto;
+}
+
+.article1 img {
+    width: 300px;
+}
+
+.article1 {
+    text-align: center;
+}
+
+.container-cari {
+    margin: auto;
+    width: 80%;
+    background-color: rgba(219, 174, 90, 0.4);
+    min-height: 400px;
+    border-radius: 20px;
+    border-left: 5px solid #dbae5a;
+    overflow: auto;
+}
+
+.cari-content {
+    width: 100%;
+    left: 10%;
+}
+
+.cari-head {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+
+.btn-art1 {
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.btn-art1:hover {
+    background-color: #d4d1cd;
+}
+
+.btn-bg1 {
+    background-color: #cfa06d;
+}
+
+.btn-bg2 {
+    background-color: #80561c;
+}
+
+#artikel-dunia {
+    text-align: center;
+    margin: auto;
+    overflow: auto;
+}
+
+#artikel-dunia img {
+    max-width: 300px;
+}
+
+.art1-kiri {
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.art1-kanan {
+    float: right;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.art1-kanan p,
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: gray;
+}
+
+.some-art {
+    width: 300px;
+    height: 200px;
+    background-color: #cfa06d;
+    border: 0;
+}
